@@ -1,0 +1,30 @@
+{
+  "name": "vue-plasmo-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "extension:dev": "plasmo dev"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "plasmo": "0.82.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@ianvs/prettier-plugin-sort-imports": "4.1.0",
+    "typescript": "^5.0.2",
+    "@types/chrome": "0.0.241",
+    "@types/node": "20.4.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ]
+  }
+}
