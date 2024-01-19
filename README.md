@@ -2,7 +2,7 @@
 
 - 一款基于 `plasmo` 框架缝合的 vue3 浏览器扩展插件开发框架
   
-[https://github.com/PlasmoHQ/plasmo](plasmo)
+[PlasmoHQ]([plasmo](https://github.com/PlasmoHQ/plasmo))
 
 
 ## 说明指南
