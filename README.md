@@ -1,6 +1,6 @@
 # Vue 3 + TypeScript + Vite + Plasmo
 
-- 一款基于 `plasmo` 框架缝合的 vue3 浏览器扩展插件开发框架
+- 一款基于 `plasmo` 框架缝合的 `Vue3` 浏览器扩展插件开发框架
   
 [PlasmoHQ]([plasmo](https://github.com/PlasmoHQ/plasmo))
 
