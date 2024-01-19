@@ -23,8 +23,13 @@
     "vue-tsc": "^1.8.5"
   },
   "manifest": {
+    "name": "影视大全",
+    "description": "一个可以搜索影视资源的插件",
+    "version": "1.0",
     "host_permissions": [
       "https://*/*"
-    ]
+    ],
+    "homepage_url": "https://github.com/iszmxw",
+    "options_page": "options.html"
   }
 }
