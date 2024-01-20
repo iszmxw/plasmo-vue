@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "vue": "^3.3.4",
-    "plasmo": "0.82.0"
+    "plasmo": "0.84.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
