@@ -1,15 +1,13 @@
 <template>
   <div>
-    <AppWidget></AppWidget>
+    <Options msg="Options Pages" />
   </div>
 </template>
 
-<style>
-
-</style>
+<style></style>
 
 <script setup lang="ts">
-import AppWidget from "./App.vue";
+import Options from "./components/Options.vue";
 
 defineOptions({
   // prepare(app: App) {
