@@ -1,10 +1,13 @@
 {
   "name": "vue-plasmo-test",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "displayName": "好狗导航",
+  "author": "haogou.cc",
+  "description": "一个导航新窗口插件",
+  "packageManager": "pnpm@8.2.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "plasmo dev",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "extension:dev": "plasmo dev"
@@ -25,13 +28,29 @@
     "vue-tsc": "^1.8.5"
   },
   "manifest": {
-    "name": "影视大全",
+    "name": "好狗导航",
     "description": "一个可以搜索影视资源的插件",
     "version": "1.0",
     "host_permissions": [
-      "https://*/*"
+      "<all_urls>"
     ],
     "homepage_url": "https://github.com/iszmxw",
-    "options_page": "options.html"
+    "options_page": "options.html",
+    "permissions": [
+      "tabs",
+      "storage",
+      "clipboardWrite"
+    ],
+    "web_accessible_resources": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "resources": [
+          "manifest.json",
+          "*.css"
+        ]
+      }
+    ]
   }
 }
