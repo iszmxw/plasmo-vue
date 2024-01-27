@@ -13,17 +13,18 @@
     "extension:dev": "plasmo dev"
   },
   "dependencies": {
+    "plasmo": "0.84.1",
     "vue": "^3.3.4",
-    "plasmo": "0.84.1"
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@element-plus/icons-vue": "^2.3.1",
-    "element-plus": "^2.5.3",
-    "@vitejs/plugin-vue": "^4.2.3",
     "@ianvs/prettier-plugin-sort-imports": "4.1.0",
-    "typescript": "^5.0.2",
     "@types/chrome": "0.0.241",
     "@types/node": "20.4.2",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "element-plus": "^2.5.3",
+    "typescript": "^5.0.2",
     "vite": "^4.5.2",
     "vue-tsc": "^1.8.5"
   },

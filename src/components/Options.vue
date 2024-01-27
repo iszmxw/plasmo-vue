@@ -1,19 +1,15 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 
-const count = ref(0)
 </script>
 
 <template>
-  <h1>欢迎来到选项配置页面</h1>
-
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
-      编辑
-      <code>components/Options.vue</code> 来测试 HMRasas
-    </p>
-  </div>
+  <header>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
+      </header>
+      
+      <!-- 路由视图将在此渲染 -->
+      <router-view></router-view>
 </template>
 
 <style scoped>
