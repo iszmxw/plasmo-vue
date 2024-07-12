@@ -5,7 +5,8 @@
 <template>
   <header>
         <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+        <router-link to="/about">About</router-link> | 
+        <router-link to="/json-format">JsonFormat</router-link>
       </header>
       
       <!-- 路由视图将在此渲染 -->

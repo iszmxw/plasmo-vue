@@ -1,17 +1,19 @@
 // router.js
 
 import { createRouter, createWebHashHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import About from '../views/About.vue';
 
 const routes = [
   {
     path: '/',
-    component: Home
+    component: () => import('../views/Home.vue')
   },
   {
     path: '/about',
-    component: About
+    component: () => import('../views/About.vue')
+  },
+  {
+    path: '/json-format',
+    component: () => import('../views/JsonFormat.vue')
   }
 ];
 

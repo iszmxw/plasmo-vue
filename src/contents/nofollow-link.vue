@@ -46,6 +46,9 @@ export default {
     setup() {
         // 当页面加载完成时，执行添加 nofollow 链接样式的函数
         window.addEventListener('load', addNofollowLinkClass);
+    },
+    mounted() {
+        console.log("mounted")
     }
 };
 </script>
