@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "typeRoots": [
+      "node_modules/@types",
+      "src/typings"
+    ],
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -20,7 +24,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "~*": ["./*"]
+      "~/*": ["./*"]
     },
   },
   "include": [

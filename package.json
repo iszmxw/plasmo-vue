@@ -4,8 +4,13 @@
   "displayName": "好狗导航",
   "author": "haogou.cc",
   "description": "一个导航新窗口插件",
-  "packageManager": "pnpm@8.2.0",
+  "packageManager": "pnpm@9.1.3",
   "type": "module",
+  "pnpm": {
+    "overrides": {
+      "svgo": "^3.0.2"
+    }
+  },
   "scripts": {
     "dev": "plasmo dev",
     "build": "vue-tsc && vite build",
@@ -13,9 +18,10 @@
     "extension:dev": "plasmo dev"
   },
   "dependencies": {
-    "plasmo": "0.84.1",
+    "plasmo": "0.88.0",
     "vue": "^3.3.4",
-    "vue-router": "^4.0.13"
+    "vue-router": "^4.0.13",
+    "vant": "^4.9.1"
   },
   "devDependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -37,9 +43,14 @@
     ],
     "homepage_url": "https://github.com/iszmxw",
     "options_page": "options.html",
+    "background": {
+      "service_worker": "background.js"
+    },
     "permissions": [
       "tabs",
+      "alarms",
       "storage",
+      "notifications",
       "clipboardWrite"
     ],
     "web_accessible_resources": [
@@ -49,6 +60,7 @@
         ],
         "resources": [
           "manifest.json",
+          "contents",
           "*.css"
         ]
       }

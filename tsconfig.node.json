@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "typeRoots": [
+      "node_modules/@types",
+      "src/typings"
+    ],
     "composite": true,
     "skipLibCheck": true,
     "module": "ESNext",
