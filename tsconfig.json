@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "typeRoots": [
-      "./node_modules/@types",
-      "./src/types"
+      "node_modules/@types",
+      "src/types"
     ],
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -25,7 +25,12 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "./src",
     "paths": {
-      "@components/*": ["components/*"],
+      "@components/*": [
+        "components/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
     }
   },
   "include": [
@@ -35,7 +40,7 @@
     "src/**/*.tsx",
     "src/**/**/*.ts",
     "src/**/*.vue"
-, "src/options/router/index.tx", "src/options/router/index.tx"  ],
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"

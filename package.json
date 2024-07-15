@@ -26,7 +26,7 @@
   "devDependencies": {
     "@element-plus/icons-vue": "^2.3.1",
     "@ianvs/prettier-plugin-sort-imports": "4.1.0",
-    "@types/chrome": "0.0.241",
+    "@types/chrome": "^0.0.268",
     "@types/node": "20.4.2",
     "@vitejs/plugin-vue": "^4.2.3",
     "element-plus": "^2.7.7",
