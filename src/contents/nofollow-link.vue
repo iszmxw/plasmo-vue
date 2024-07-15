@@ -1,18 +1,7 @@
 <template>
-    <span className="xw-top">
-        外链自动显示出来
-    </span>
 </template>
 
 <style>
-.xw-top{
-    width: 100%;
-    height: 2.5rem;
-    font-size: 1.6rem;
-    text-align: center;
-    background: #0550ae;
-    color: #fff;
-}
 .xw-nofollow-link {
   outline: 0.14em dotted red !important;
   outline-offset: 0.2em;

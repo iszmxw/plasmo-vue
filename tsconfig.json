@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "typeRoots": [
-      "node_modules/@types",
-      "src/typings"
+      "./node_modules/@types",
+      "./src/types"
     ],
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -23,17 +23,19 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./src",
     "paths": {
-      "~/*": ["./*"]
-    },
+      "@components/*": ["components/*"],
+    }
   },
   "include": [
     ".plasmo/index.d.ts",
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
+    "src/**/**/*.ts",
     "src/**/*.vue"
-  ],
+, "src/options/router/index.tx", "src/options/router/index.tx"  ],
   "references": [
     {
       "path": "./tsconfig.node.json"

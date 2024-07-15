@@ -28,3 +28,30 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   console.log(sender.tab ? "来自内容脚本：" + sender.tab.url : "来自扩展程序");
   sendResponse({ farewell: "再见" });
 });
+
+chrome.runtime.onInstalled.addListener(() => {
+  // 创建第一个菜单项
+  chrome.contextMenus.create({
+    id: "1",
+    title: "★ 收藏网址",
+    contexts: ["all"]
+  });
+
+  // 创建第二个菜单项
+  chrome.contextMenus.create({
+    id: "2",
+    title: "☁ 意见反馈",
+    contexts: ["all"]
+  });
+});
+
+chrome.contextMenus.onClicked.addListener((info, tab) => {
+  switch (info.menuItemId) {
+    case "1":
+      chrome.tabs.sendMessage(tab.id, { info, tab, message: "menuItem1Clicked" });
+      break;
+    case "2":
+      chrome.tabs.sendMessage(tab.id, { message: "menuItem2Clicked" });
+      break;
+  }
+});
